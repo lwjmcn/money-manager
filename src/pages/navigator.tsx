@@ -12,7 +12,7 @@ const BottomTab = createBottomTabNavigator();
 const Navigator = () => {
   return (
     <NavigationContainer>
-      <BottomTab.Navigator initialRouteName="Home" screenOptions={{ headerShown: false, tabBarIconStyle: { marginTop: 3 }, tabBarLabelStyle: { height: 18 } }}>
+      <BottomTab.Navigator initialRouteName="홈" screenOptions={{ headerShown: false, tabBarIconStyle: { marginTop: 3 }, tabBarLabelStyle: { height: 18 } }}>
         <BottomTab.Screen name="여행" component={TravelTab} options={{ tabBarIcon: ({ color }) => <Icon name="TravelIcon" fill={color} /> }} />
         <BottomTab.Screen name="조회" component={ViewTab} options={{ tabBarIcon: ({ focused, color }) => <Icon name={focused ? "CreditCardIconFill" : "CreditCardIcon"} fill={color} /> }} />
         <BottomTab.Screen name="홈" component={HomeTab} options={{ tabBarIcon: ({ focused, color }) => <Icon name={focused ? "HomeIconFill" : "HomeIcon"} fill={color} /> }} />

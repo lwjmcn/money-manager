@@ -1,6 +1,7 @@
-import { useColorScheme, View, Text, SafeAreaView, ScrollView, StatusBar, Button } from "react-native";
+import { useColorScheme, View, Text, SafeAreaView, ScrollView, StatusBar, Button, TouchableOpacity } from "react-native";
 import { Colors, DebugInstructions, Header, LearnMoreLinks, ReloadInstructions } from "react-native/Libraries/NewAppScreen";
 import Section from "./component/section";
+import * as API from "./api";
 
 const Home = ({ navigation }: any) => {
   const isDarkMode = useColorScheme() === "dark";
@@ -19,7 +20,22 @@ const Home = ({ navigation }: any) => {
         {/* 내용 */}
         <View style={{ backgroundColor: isDarkMode ? Colors.black : Colors.white }}>
           {/* 버튼 */}
-          <Button title="버튼" onPress={() => navigation.navigate("Home")} touchSoundDisabled />
+          <View style={{ width: "100%", display: "flex", flexDirection: "row", gap: 2 }}>
+            <TouchableOpacity
+              onPress={async () => console.log(await API.getUsers())}
+              style={{ flex: 1, backgroundColor: "skyblue", padding: 2, alignItems: "center", borderRadius: 5 }}
+              touchSoundDisabled
+              activeOpacity={0.8}>
+              <Text>Get Users</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={async () => console.log(await API.createUser("Add"))}
+              style={{ flex: 1, backgroundColor: "skyblue", padding: 2, alignItems: "center", borderRadius: 5 }}
+              touchSoundDisabled
+              activeOpacity={0.8}>
+              <Text>Create Users</Text>
+            </TouchableOpacity>
+          </View>
           <Section title="Reload : R">
             <ReloadInstructions />
           </Section>
