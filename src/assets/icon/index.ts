@@ -1,0 +1,9 @@
+export { default as HomeIcon } from "./home.svg";
+export { default as HomeIconFill } from "./home_fill.svg";
+export { default as TravelIcon } from "./travel.svg";
+export { default as CreditCardIcon } from "./credit_card.svg";
+export { default as CreditCardIconFill } from "./credit_card_fill.svg";
+export { default as ChartIcon } from "./chart.svg";
+export { default as ChartIconFill } from "./chart_fill.svg";
+export { default as SettingIcon } from "./setting.svg";
+export { default as SettingIconFill } from "./setting_fill.svg";
