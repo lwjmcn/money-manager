@@ -3,6 +3,11 @@ import { Colors, DebugInstructions, Header, LearnMoreLinks, ReloadInstructions }
 import Section from "./component/section";
 import * as API from "./api";
 
+// android에 정보 전달
+import { NativeModules } from "react-native";
+const SharedStorage = NativeModules.SharedStorage;
+SharedStorage.set(JSON.stringify({ text: "This is data from RN App" }));
+
 const Home = ({ navigation }: any) => {
   const isDarkMode = useColorScheme() === "dark";
 
