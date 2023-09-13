@@ -7,3 +7,4 @@ export { default as ChartIcon } from "./chart.svg";
 export { default as ChartIconFill } from "./chart_fill.svg";
 export { default as SettingIcon } from "./setting.svg";
 export { default as SettingIconFill } from "./setting_fill.svg";
+export { default as CheckIcon } from "./check.svg";
