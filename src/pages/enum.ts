@@ -16,3 +16,20 @@ export enum Pages {
 export enum HomeTabs {
   HOME = "Home",
 }
+
+export enum ColorThemes {
+  RED = "red",
+  PINK = "pink",
+  GRAPE = "grape",
+  VIOLET = "violet",
+  INDIGO = "indigo",
+  BLUE = "blue",
+  CYAN = "cyan",
+  TEAL = "teal",
+  GREEN = "green",
+  LIME = "lime",
+  YELLOW = "yellow",
+  ORANGE = "orange",
+  GRAY = "gray",
+  map = "map",
+}
