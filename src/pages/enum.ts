@@ -15,6 +15,14 @@ export enum Pages {
 }
 export enum HomeTabs {
   HOME = "Home",
+  INPUT = "Input",
+}
+export enum InputTabs {
+  TYPE = "First Input",
+  MONEY = "Second Input",
+  SECOND = "Third Input",
+  LAST = "Fourth Input",
+  DONE = "Done",
 }
 
 export enum ColorThemes {
@@ -32,4 +40,11 @@ export enum ColorThemes {
   ORANGE = "orange",
   GRAY = "gray",
   map = "map",
+}
+
+export enum Transfers {
+  INCOME = "수입",
+  EXPENSE = "지출",
+  TRANSFER = "이체",
+  CURRENCY = "환전",
 }

@@ -1,10 +1,10 @@
-import { NavigationContainer, NavigationContainerRef } from "@react-navigation/native";
+import { NavigationContainer, NavigationContainerRef, getFocusedRouteNameFromRoute } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { DeviceEventEmitter, StatusBar } from "react-native";
-import { createRef } from "react";
+import { createRef, useLayoutEffect } from "react";
 
 import Icon from "../components/svg_icon";
-import { Pages } from "./enum";
+import { HomeTabs, Pages } from "./enum";
 import { Color } from "../../themes/colors";
 import { useTheme } from "../../themes/theme";
 
